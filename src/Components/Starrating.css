@@ -1,0 +1,203 @@
+*{
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #clsModal{
+    height:45px;
+    width: 70%;
+    margin: 15px ;
+    padding: 20px 15px;
+    margin-left: 15%;
+    font-size: 20px ;
+    margin-bottom: 10%;
+    margin-top: 0;
+    text-align: center;
+    
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+  
+
+.starcontainer{
+    width: 400px;
+    padding: 20px 30px;
+    /* border: 1px solid #444; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: rgb(255, 255, 255);
+    /* background: #575353; */
+    /* z-index: 1; */
+    /* visibility: visible; */
+    /* margin-left: 35%; */
+    margin-top: 10%;
+    
+}
+.star-widget{
+    display: block;
+}
+
+ .text{
+    font-size: 25px;
+    color: red;
+    font-weight: 500;
+
+}
+.edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(164, 74, 74);
+    font-weight: 500;
+    
+}
+.post{
+    font-weight: solid;
+    text-align: justify;
+}
+.starcontainer form{
+    display: none;
+}
+input:checked ~ form{
+    display: block;
+
+}
+.starcontainer .star-widget input{
+    display: none;
+    
+}
+.starcontainer .star-widget label {
+    cursor: pointer;
+    font-size: 45px;
+    color: #444;
+    /* margin-left: 10px; */
+    padding: 10px;
+    float:right;
+    transition: all 0.2s ease;
+   
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color:#fd4;
+    
+
+}
+
+input:checked ~ label{
+    color: #fd4;
+    filter: drop-shadow(3px 3px 0px rgb(50, 48, 48));}
+input#rate-5:checked ~ label,
+input#rate-4:checked ~ label,
+input#rate-3:checked ~ label,
+input#rate-2:checked ~ label,
+input#rate-1:checked ~ label{
+    color:#fe7;
+    text-shadow: 0 0 20px #952;
+    /* border: 1px solid  #575353; */
+
+}
+#rate-1:checked ~ form header:before{
+    content: " I just hate it" ;
+
+}
+#rate-2:checked ~ form header:before{
+    content: " I don't like it." ;
+
+}
+#rate-3:checked ~ form header:before{
+    content: " I just like it" ;
+
+}
+#rate-4:checked ~ form header:before{
+    content: "I just love it." ;
+
+}
+#rate-5:checked ~ form header:before{
+    content: "It is awesome." ;
+
+}
+
+form header{
+    width: 100%;
+    font-size: 30px;
+    color: rgba(35, 32, 12, 0.8);
+    font-weight: 500;
+    margin:10px 0 20px 0;
+    text-align: center;
+    transition: all 0.2 ease;
+    margin-top: 70px;
+    padding: 10px 0px;
+}
+
+form .textarea{
+    height:100px;
+    width:100%;
+    overflow: hidden;
+
+}
+form .textarea textarea{
+    height: 70%;
+    width: 93%;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 17px;
+    /* color: ; */
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form .btn{
+    height:45px;
+    width: 100%;
+    margin: 15px 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+
+}
+
+form .btn button{
+     height: 100%;
+     width:100%;
+     border: 1px solid #444;
+     outline: none;
+     /* color:; */
+     font-size: 17px;
+     font-weight:  500;
+     text-transform: uppercase;
+     cursor:pointer;
+
+}
+form .btn button:hover{
+    background:#575353
+}
+

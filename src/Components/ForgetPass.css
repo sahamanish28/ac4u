@@ -1,0 +1,376 @@
+
+.fr-header{
+  margin-left: 40px;
+  font-size:35px;
+  color: #1c1cff;
+  font-weight: 900;
+  margin-top: 20px;
+  text-shadow: 0px 1px 1px #ffffff;
+   
+    
+}
+.bodybg{
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 0;
+  background-image: url('../Assets/dogdc.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+ top: 0;
+ left: 0;
+ position:relative;
+  /* z-index: -1; */
+  /* position: absolute; */
+  height: 1000px !important;
+/* height: 1; */
+}
+
+.container-fr{
+  background-color: #edecec;
+  backdrop-filter: blur(8px); 
+  box-sizing: border-box;
+  margin-top: 12%;
+  margin-left: 40%;
+  height: 480px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  border-radius: 0px 25px 0px 25px;
+  border: 1px solid #1c1cff;
+  z-index: 1;
+  /* position: absolute; */
+}
+
+
+.container-fr span{
+  margin-top: 15px;
+  text-align: justify;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  width: 100px;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+
+}
+#otpmail-fr-ml{
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: 5px;
+/* margin-top: 50px; */
+
+
+
+}
+
+#otpmail-fr{
+  margin-top: 10px;
+  border-radius: 4px;
+  width:350px;
+  margin-left: 5px;
+  height: 35px;
+  padding: 12px;
+  border: 1px solid #1c1cff;
+  font-size: 20px;
+}
+
+#otpmail-fr input:active{
+  border: #fff;
+}
+
+#sendotp-fr{
+
+  background-color: #1c1cff;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  width:350px !important  ;
+  height: 38px;
+  margin-top: 8px;
+  padding: 0px 20px 0px 20px !important;
+  padding-top:5px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #5369d6;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#sendotp-fr:hover{
+background-color: aliceblue;
+color: #2a106a;
+cursor: pointer;
+}
+
+
+.container-fr-p{  
+  /* align-items: center; */
+  font-size: 20px;
+  margin-left: 30px;
+  width: 300px;   
+  color: rgb(33, 9, 9);
+  text-shadow:0px 8px 12px rgba(189, 116, 6, 0.2); 
+  font-weight: 600;
+}
+.container-fr-p a{
+  text-decoration: none;
+  color: #1c1cff;
+  font-weight: 800;
+
+}
+
+
+
+.modal-fr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-fr-content {
+  background-color: white;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  position: relative;
+  height: 600PX;
+  width: 900PX ;
+
+}
+
+.close-fr {
+  position: absolute;
+  /* top: 10px; */
+  /* margin-right: 0px; */
+  margin-left: 855px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #0e0b0b;
+  height: 36px;
+  width: 45px;
+  border-color:1px solid white;
+  
+  /* background-color: white; */
+
+  
+}
+
+.close-fr:hover {
+  background-color: red; 
+  color: rgb(255, 255, 255);
+  border-radius: 10px 0px 10px 0px;
+
+}
+/* #off-fr{
+  margin-top: 0.1px;
+  font-size: 30px;
+  margin-left: 1%;
+} */
+/* #off:hover{
+  font-size: 25px;
+  color: white;
+
+} */
+
+
+
+@media screen and (max-width: 480px) {
+ 
+  .modal-fr-content {
+    width: 90%;
+  }
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#desc{
+  margin-left: 26%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  width: 380px;
+  margin-top: 80px;
+  animation: blink 2s infinite;
+
+}
+.otp-container{
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+.otp-container h2{
+  font-size: 30px;
+  color: #1c1cff;
+  font-weight: 800;
+
+
+}
+.code-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.code{
+  caret-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 1px solid #1c1cff;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  width: 45px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .code-container{
+    flex-wrap: wrap;
+  }
+  .code{
+    font-size: 24px;
+    height: 50px;
+    max-width: 50px;
+    font-size: bold;
+  }
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.code:valid {
+  border-color: #1c1cff;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.btn-fr{
+  font-family: "Lato", sans-serif;
+  min-width: 380px;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin: 0px 0px 20px 0px;
+  padding: 0.775rem 0.75rem;
+  font-size:15px;
+  line-height: 1.5;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.7;
+  box-shadow:  0 10px 10px -5px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  font-weight: 900;
+ 
+}
+
+.btn-fr-primary{
+  color: #fff;
+  background-color: #1c1cff;
+  border-color: #1c1cff;
+}
+
+.btn-fr-primary:hover{
+  color: #1c1cff;
+  background-color: #fff;
+  font-weight: 800;
+  border: 2px solid #1c1cff;
+  box-shadow:  0 10px 10px -5px rgba(0, 0, 0, 0.25);
+} 
+
+small{
+  font-size: 17px;
+
+}
+
+strong{
+  font-size: 18px !important;
+  color: #1c1cff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*Reset password CSS*/
+
+.rspass{
+  margin-left: 105px;
+  animation: blink 2s infinite;
+  font-size: 30px;
+  color: #1c1cff;
+  font-weight: 800;
+
+}
+
+.CardContainer{
+  width: 400px;
+  height: 380px;
+  margin-top: 15%;
+  margin-left: 41%;
+  border: 1px solid #2a106a;
+  border-radius: 0px 30px 0px 30px;
+  backdrop-filter: blur(8px);
+}
+
+
+.inp{
+  width: 270px;
+  margin-left: 60px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+
+}
+
+#lbl{
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 60px;
+  
+}
+
+.pwsubmit{
+  background-color: #1c1cff;
+  color: white;
+  font-size: 15px;
+  width: 295px;
+  height: 40px;
+  font-weight: 700;
+
+  
+}
+
+.pwsubmit:hover{
+  background-color: rgb(239, 228, 228);
+  color: #2a106a;
+  font-weight: 700;
+  cursor: pointer;
+  
+
+}

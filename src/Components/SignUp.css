@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Oswald:wght@200&family=Poppins:ital,wght@1,900&display=swap');
+
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../Assets/login.jpg);
+    background-size: 100% 100%;
+}
+
+.container{
+    /* position:relative; */
+    background: transparent;
+    width: 490px;
+    color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border: 2px solid rgba(225, 225, 225, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container h1{
+    /* color: black; */
+    font-size: 36px;
+    text-align: center;
+}
+
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(225, 225, 225, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box .ico{
+    position: absolute;
+    /* right: 0px; */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    margin-left: 90%;
+}
+
+.container .remember-forgot{
+    /* text-align: center; */
+    display: flex;
+    justify-content:center;
+    font-size: 14.5px;
+    margin: -15px 0px 15px 0;
+}
+
+.remember-forgot label input{
+    color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-decoration-break: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.container .btn2{
+    width: 100%;
+    height: 45px;
+    background: rgb(255, 253, 253);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-decoration-break: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.container .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.otp {
+    display: flex;
+    gap: 10px;
+
+   
+}
+.otp input{
+    
+    width: 350px;
+    padding: 20px;
+
+
+}
+
+
+.otpsubmit{
+    width: 100px;
+    border-radius: 26px;
+    background-color: rgb(27, 181, 27);
+    color:  white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phn{
+    margin-left: 70% !important;
+  
+}
+
+.otp button{
+    width: 90px;
+    border-radius: 25px;
+    color: white;
+    /* background-color: #7e1c05; */
+    background-image: linear-gradient(146deg,rgb(130, 12, 12), #b9a21e);
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 700px;
+    height: 51px;
+}
+
+.otp button:hover {
+    background-image: linear-gradient(146deg,rgb(177, 5, 5), #eeca00);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.eye{
+    cursor:pointer;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color:black;
+}
+
+.modal-content {
+    background-image: linear-gradient(180deg, #ffff,#ffffff, #fee8e5);
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 280px;
+    width: 430px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+.modal-content h2{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.modal-content p{
+    margin-top: 20px;
+    font-size: 20px;
+    animation: blink 2s infinite;
+    color: rgb(4, 85, 4);
+   
+}
+.modal-content button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(21, 161, 115);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #eee;
+    margin-top: 20px;
+    width: 90px;
+}
+.modal-content button:hover{
+    background-color: rgb(104, 173, 0)
+}
+.modal-content span{
+    font-size: 15px;
+    color: rgb(240, 1, 1);
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+/* Additional style to disable the button until OTP is entered or verified */
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.modal-content input{
+    height: 20px;
+    width: 250px;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: #eee;
+    border: 2px solid #eac4bf;
+}
+/* Optional: Add styling for the disabled input field */
+input:disabled {
+    background-color: #eee;
+}
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .verisucces span{
+    color: rgb(0, 255, 0);
+    animation: blink 3s infinite;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    /* margin-top: 0; */
+    /* margin-left: 20px; */
+    /* background-color: #eee; */
+    text-shadow: 2px 2px 2px #2d0909;
+    height: 260px ;
+    margin-left: 90px;
+    margin-top: 100px !important;
+  }
+
+  .verisucces p{
+    color: rgb(255, 0, 0);
+    animation: blink 3s infinite;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px #c7ff0d;
+    margin-left: 20px;
+    width: 300px ;
+    
+  }
+  .verisucces{
+    
+    width: 350px;
+    margin-left: 30px;
+    /* height: 150px; */
+  }
+
+  #otp{
+    background-color: #ccc;
+  }

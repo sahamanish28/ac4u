@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Handjet:wght@200&family=Jost:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=Pixelify+Sans&family=Poppins&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@400;500&family=Handjet:wght@200&family=Jost:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=Pixelify+Sans&family=Poppins&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@400;500&family=Handjet:wght@200&family=Jost:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=PT+Serif&family=Pixelify+Sans&family=Poppins&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+.home-main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* video animation */
+
+/* .videobg-main{
+    position: relative;
+}
+
+.videobg{
+    width: 100%;
+    height: 90vh;
+    } */
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.video-container-main {
+    position: relative;
+    z-index: -1;
+
+}
+
+.text-video-main {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+/* text animation */
+
+.text-main {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    /* align-items: center; */
+}
+
+.text-main h2 {
+    margin-left: 75px;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.text-main span {
+    color: red;
+}
+
+/* image animation */
+
+.imagSlider-main {
+    display: flex;
+    width: 50%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSlider {
+    width: 65%;
+    height: 40vh;
+    background-image: url("../Assets/home_01.jpg");
+    background-size: 100% 100%;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    animation: changeImage 30s linear infinite;
+    border-radius: 20px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url("../Assets/home_01.jpg");
+    }
+
+    25% {
+        background-image: url("../Assets/home_02.jpg");
+    }
+
+    50% {
+        background-image: url("../Assets/home_03.jpg");
+    }
+
+    75% {
+        background-image: url("../Assets/home_04.jpeg");
+    }
+
+    100% {
+        background-image: url("../Assets/home_01.jpg");
+    }
+}
+
+.vision {
+    width: 100%;
+    height: auto;
+}
+
+.vision-h2 {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.vision h2 {
+    color: red;
+    font-size: 30px;
+    font-family: 'PT Serif', sans-serif;
+}
+
+.vision-p {
+    width: 100%;
+    display: flex;
+}
+
+.vision p {
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 40px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Edu TAS Beginner', sans-serif;
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@400;500&family=Handjet:wght@200&family=Jost:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=Mukta:wght@300;400&family=PT+Serif&family=Pixelify+Sans&family=Poppins&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@400;500&family=Handjet:wght@200&family=Jost:wght@300;400&family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=PT+Serif&family=Pixelify+Sans&family=Poppins&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+.container1-main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../Assets/home_03.jpg);
+  background-size: 100% 100%;
+  /* background: lightblue; */
+}
+
+.container1{
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.container1 header{
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+
+.container1 hr{
+  border: none;
+  margin-top: 3px;
+  width: 8%;
+  height: 4px;
+  border-radius: 10px;
+  background: red;
+}
+
+.container1 form{
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
+  background-color: white;
+}
+
+.container1 form .details{
+  margin-top: 30px;
+}
+
+.container1 form .id{
+  margin-top: 20px;
+}
+
+.container1 form .title{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: black;
+  font-family: 'Mukta', sans-serif;
+}
+
+.container1 form .fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form .fields .input-fields{
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+.input-fields label{
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.input-fields input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+
+.input-fields select{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+
+.input-fields input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.50);
+}
+
+.input-fields select:is(:focus){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.50);
+}
+
+.input-fields input[type="date"]{
+  color: #707070;
+}
+
+.input-fields input[type="date"]:valid{
+  color: black;
+}
+
+.btn-main{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.btn1{
+  width: 200px;
+  margin-right: 40px;
+}
+
+.btn2{
+  width: 200px;
+}
+
+.btn-main button{
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  background-color: skyblue;
+  cursor: pointer;
+  font-weight: 600;transition: all 0.3s linear;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-main button:hover{
+  background-color: rgb(65, 173, 215);
+}
+
+
+
+
+

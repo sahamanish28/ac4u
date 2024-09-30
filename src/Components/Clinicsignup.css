@@ -1,0 +1,14 @@
+.true{
+    width: 100%;
+    margin: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-image: url(/src/Assets/doccare.jpg);
+    /* background-image: url("../Assets/wickedbackground.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
